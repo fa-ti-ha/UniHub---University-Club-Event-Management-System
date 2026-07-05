@@ -1,1 +1,10 @@
-git status
+UniHub Project Contribution Rules
+
+1. Do not push directly to main.
+2. Always create a feature branch from develop.
+3. Branch name must include Jira issue key.
+4. Commit message must include Jira issue key.
+5. Create a pull request before merging.
+6. Scrum Master reviews and merges pull requests.
+7. Backend work should be assigned to backend developer.
+8. Test your feature before creating a pull request.

@@ -1,0 +1,11 @@
+Branch Workflow Rules
+
+1. main branch is for stable final code only.
+2. develop branch is for sprint development.
+3. No one should push directly to main.
+4. Every feature must use a Jira issue branch.
+5. Branch format: feature/UNH-issue-number-short-name
+6. Pull requests must merge into develop first.
+7. Scrum Master reviews and merges pull requests.
+8. main is updated only after sprint review or final release.
+
