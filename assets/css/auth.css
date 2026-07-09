@@ -1,0 +1,63 @@
+/* ============================================================
+   assets/css/auth.css — Auth pages (login & register)
+   ============================================================ */
+
+.auth-page {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    min-height: 100vh;
+    background: var(--color-bg);
+}
+
+/* ---- Left Panel ---- */
+.auth-panel-left {
+    background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 50%, #1a56db 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2.5rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+.auth-left-content { color: #fff; max-width: 360px; }
+.auth-brand { display: flex; align-items: center; gap: 0.75rem; font-size: 1.5rem; font-weight: 900; color: #fff; margin-bottom: 2.5rem; }
+.auth-brand-icon { width: 44px; height: 44px; background: rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+.auth-illustration { font-size: 5rem; text-align: center; margin-bottom: 1.5rem; animation: float 4s ease-in-out infinite; }
+.auth-left-content h2 { font-size: 1.75rem; font-weight: 900; color: #fff; margin-bottom: 0.75rem; }
+.auth-left-content p  { color: rgba(255,255,255,0.75); line-height: 1.8; margin-bottom: 2rem; }
+.auth-features { display: flex; flex-direction: column; gap: 0.75rem; }
+.auth-feature-item { display: flex; align-items: center; gap: 0.75rem; color: rgba(255,255,255,0.85); font-size: 0.875rem; }
+.auth-feature-item i { color: #4ade80; font-size: 1.1rem; flex-shrink: 0; }
+
+/* ---- Right Panel ---- */
+.auth-panel-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2.5rem;
+    overflow-y: auto;
+    background: var(--color-bg);
+}
+.auth-form-wrapper { width: 100%; max-width: 480px; }
+.auth-form-header  { margin-bottom: 2rem; }
+.auth-form-header h1 { font-size: 1.875rem; font-weight: 900; margin-bottom: 0.35rem; }
+.auth-form-header p  { color: var(--color-text-2); font-size: 0.9rem; }
+.auth-form-header a  { color: var(--color-primary); font-weight: 600; }
+
+/* Forgot link */
+.forgot-link { font-size: 0.8rem; color: var(--color-primary); font-weight: 600; }
+
+/* Divider */
+.auth-divider { display: flex; align-items: center; gap: 1rem; color: var(--color-text-3); font-size: 0.8rem; margin: 1.25rem 0; }
+.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--color-border); }
+
+/* Responsive */
+@media (max-width: 860px) {
+    .auth-page { grid-template-columns: 1fr; }
+    .auth-panel-left { display: none; }
+    .auth-panel-right { padding: 2rem 1.5rem; min-height: 100vh; }
+}
+@media (max-width: 480px) {
+    .register-grid { grid-template-columns: 1fr; }
+}
