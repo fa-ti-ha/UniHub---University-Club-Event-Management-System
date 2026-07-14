@@ -1,6 +1,6 @@
 <?php
 // ============================================================
-// api/events.php — Event registration & approval
+// api/events.php — Event registration & approve 
 // ============================================================
 session_start();
 require_once __DIR__ . '/../config/db.php';
@@ -16,7 +16,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $body   = $method === 'POST' ? (json_decode(file_get_contents('php://input'), true) ?? []) : [];
 $action = $_GET['action'] ?? $body['action'] ?? '';
 
-// ---- REGISTER FOR EVENT ----
+// ---- REGISTRATION FOR EVENT ----
 if ($action === 'register' && $method === 'POST') {
     $eventId = (int)($body['event_id'] ?? 0);
     if (!$eventId) jsonResponse(['success' => false, 'message' => 'Invalid event.']);
@@ -26,7 +26,7 @@ if ($action === 'register' && $method === 'POST') {
     $ev = $event->fetch();
     if (!$ev) jsonResponse(['success' => false, 'message' => 'Event not found or not available.']);
 
-    // Check deadline
+    // Check deadline 
     if ($ev['registration_deadline'] && strtotime($ev['registration_deadline']) < time()) {
         jsonResponse(['success' => false, 'message' => 'Registration deadline has passed.']);
     }
@@ -60,7 +60,7 @@ if ($action === 'cancel_registration' && $method === 'POST') {
     jsonResponse(['success' => true, 'message' => 'Registration cancelled.']);
 }
 
-// ---- APPROVE EVENT (Super Admin) ----
+// ---- APPROVE EVENT (approval by Super Admin) ----
 if ($action === 'approve_event' && $method === 'POST') {
     requireRole('super_admin');
     $id = (int)($body['id'] ?? 0);
@@ -100,3 +100,6 @@ if ($action === 'delete_event' && $method === 'POST') {
 }
 
 jsonResponse(['success' => false, 'message' => 'Invalid action'], 400);
+
+
+
