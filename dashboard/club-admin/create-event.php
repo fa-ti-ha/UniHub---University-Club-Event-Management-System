@@ -89,8 +89,10 @@ require_once __DIR__ . '/../../includes/header.php';
             <option value="manual">Manual Review</option>
         </select>
     </div>
-   
-    
+    <div class="form-group">
+        <label class="form-label">Organizer Club</label>
+        <input type="text" class="form-control" value="<?= htmlspecialchars($club['name'] ?? '') ?>" disabled />
+    </div>
     <div class="form-group" style="grid-column:1/-1">
         <label class="form-label">Event Banner</label>
         <label class="file-upload" for="bannerInput">
