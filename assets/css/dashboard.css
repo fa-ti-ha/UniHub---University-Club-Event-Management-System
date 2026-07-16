@@ -125,7 +125,7 @@ body {
   color: #f87171;
 }
 
-/* ---- Dashboard Main Content ---- */
+/* ---- Dashboard Main Content ---- 
 .dashboard-main {
   flex: 1;
   margin-left: var(--sidebar-w);
@@ -182,7 +182,7 @@ body {
   gap: 1.5rem;
 }
 
-/* ---- Stats Row ---- */
+/* ---- Stats Row  */
 .stats-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
