@@ -1,7 +1,7 @@
 <?php
-// ============================================================
+
 // api/clubs.php — Club CRUD, join, approval — BUG FIXED
-// ============================================================
+// This file handles club-related actions such as joining a club, approving/rejecting join requests, approving/suspending/deleting clubs, and managing club members. It is used by both the super admin and club admins.
 session_start();
 require_once __DIR__ . '/../config/db.php';
 require_once __DIR__ . '/../includes/functions.php';
@@ -40,8 +40,8 @@ if ($action === 'join' && $method === 'POST') {
     }
     jsonResponse(['success' => true, 'message' => 'Join request sent! Awaiting approval.']);
 }
-
-// ---- APPROVE/REJECT JOIN REQUEST ----
+//fixed some issues
+//APPROVE/REJECT JOIN REQUEST
 if (in_array($action, ['approve_request','reject_request']) && $method === 'POST') {
     requireAnyRole(['club_admin','super_admin']);
     $reqId  = (int)($body['id'] ?? 0);

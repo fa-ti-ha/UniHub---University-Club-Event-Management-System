@@ -2,7 +2,7 @@
 // ============================================================
 // includes/functions.php — COMPLETE & BUG-FIXED VERSION
 // ============================================================
-
+//fixed some issues
 function sanitize(string $value): string {
     return htmlspecialchars(strip_tags(trim($value)), ENT_QUOTES, 'UTF-8');
 }
