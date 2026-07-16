@@ -40,7 +40,7 @@ if ($action === 'join' && $method === 'POST') {
     }
     jsonResponse(['success' => true, 'message' => 'Join request sent! Awaiting approval.']);
 }
-
+//fixed some issues
 //APPROVE/REJECT JOIN REQUEST
 if (in_array($action, ['approve_request','reject_request']) && $method === 'POST') {
     requireAnyRole(['club_admin','super_admin']);
