@@ -29,7 +29,7 @@ $eventsStmt = $pdo->prepare("SELECT * FROM events WHERE club_id = ? AND status =
 $eventsStmt->execute([$club['id']]);
 $clubEvents = $eventsStmt->fetchAll();
 
-// Check membership / request status
+// Checking membership / request status
 $isMember = false; $hasPending = false;
 if (isLoggedIn()) {
     $uid = currentUser()['id'];
