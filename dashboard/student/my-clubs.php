@@ -1,5 +1,5 @@
 <?php
-// dashboard/student/my-clubs.php
+// dashboard/student/my-clubs.php added
 session_start();
 require_once __DIR__ . '/../../config/db.php';
 require_once __DIR__ . '/../../includes/functions.php';
