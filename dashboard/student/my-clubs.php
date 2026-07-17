@@ -37,7 +37,7 @@ require_once __DIR__ . '/../../includes/header.php';
 </div>
 <?php endif; ?>
 
-<!-- My Clubs -->
+<!-- My Clubs part-->
 <?php if ($clubs): ?>
 <div class="grid-auto">
     <?php foreach ($clubs as $club): ?>

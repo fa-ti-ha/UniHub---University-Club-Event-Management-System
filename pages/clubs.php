@@ -136,7 +136,7 @@ require_once __DIR__ . '/../includes/header.php';
             <?php endforeach; ?>
         </div>
 
-        <!-- Pagination -->
+        <!-- Pagination done -->
         <?php if ($pg['total_pages'] > 1): ?>
         <div class="pagination">
             <?php if ($pg['has_prev']): ?>
