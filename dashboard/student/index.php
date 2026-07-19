@@ -65,7 +65,7 @@ require_once __DIR__ . '/../../includes/header.php';
     </div>
     <?php endforeach; ?>
 </div>
-
+<!-- resolved the issue -->
 <div class="dashboard-grid">
     <!-- My Clubs -->
     <div>

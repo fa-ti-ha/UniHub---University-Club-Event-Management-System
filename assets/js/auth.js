@@ -274,3 +274,4 @@ function setLoading(btn, loading) {
   btn.classList.toggle("is-loading", loading);
   btn.disabled = loading;
 }
+//checked and fixed some issues

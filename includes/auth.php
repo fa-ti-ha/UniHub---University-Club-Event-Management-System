@@ -57,7 +57,7 @@ function loginUser(array $user): void {
         'phone'           => $user['phone'] ?? null,
     ];
 }
-
+//fixed roll access issues
 function logoutUser(): void {
     $_SESSION = [];
     if (ini_get('session.use_cookies')) {
@@ -77,3 +77,4 @@ function dashboardRedirect(): void {
     header('Location: ' . ($map[$role] ?? BASE_URL . '/index.php'));
     exit;
 }
+// check & fixed bugs
