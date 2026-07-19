@@ -1,7 +1,7 @@
 <?php
-// ============================================================
+
 // api/notifications.php — Fetch & mark notifications
-// ============================================================
+
 session_start();
 require_once __DIR__ . '/../config/db.php';
 require_once __DIR__ . '/../includes/functions.php';
@@ -50,5 +50,5 @@ if ($method === 'POST') {
         jsonResponse(['success' => true, 'message' => 'Notification deleted.']);
     }
 }
-
+//fixed some issues
 jsonResponse(['success' => false, 'message' => 'Invalid request'], 400);
