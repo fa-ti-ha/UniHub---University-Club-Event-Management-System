@@ -77,3 +77,4 @@ function dashboardRedirect(): void {
     header('Location: ' . ($map[$role] ?? BASE_URL . '/index.php'));
     exit;
 }
+// check & fixed bugs

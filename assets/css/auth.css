@@ -61,3 +61,4 @@
 @media (max-width: 480px) {
     .register-grid { grid-template-columns: 1fr; }
 }
+/* Fixed some bugs & fixed*/
