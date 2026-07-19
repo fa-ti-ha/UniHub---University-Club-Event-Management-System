@@ -1,5 +1,5 @@
 <?php
-// pages/club-detail.php added
+// pages/club-detail.php
 session_start();
 require_once __DIR__ . '/../config/db.php';
 require_once __DIR__ . '/../includes/functions.php';
@@ -29,7 +29,7 @@ $eventsStmt = $pdo->prepare("SELECT * FROM events WHERE club_id = ? AND status =
 $eventsStmt->execute([$club['id']]);
 $clubEvents = $eventsStmt->fetchAll();
 
-// Checking membership / request status
+// Check membership / request status
 $isMember = false; $hasPending = false;
 if (isLoggedIn()) {
     $uid = currentUser()['id'];

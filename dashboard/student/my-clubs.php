@@ -1,5 +1,5 @@
 <?php
-// dashboard/student/my-clubs.php added
+// dashboard/student/my-clubs.php
 session_start();
 require_once __DIR__ . '/../../config/db.php';
 require_once __DIR__ . '/../../includes/functions.php';
@@ -37,7 +37,7 @@ require_once __DIR__ . '/../../includes/header.php';
 </div>
 <?php endif; ?>
 
-<!-- My Clubs part-->
+<!-- My Clubs -->
 <?php if ($clubs): ?>
 <div class="grid-auto">
     <?php foreach ($clubs as $club): ?>
