@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 function isLoggedIn(): bool {
-    return isset($_SESSION['user_id']) && !empty($_SESSION['user_id']);
+    return !empty($_SESSION['user_id']) && !empty($_SESSION['user']) && !empty($_SESSION['role']);
 }
 
 function currentUser(): ?array {
