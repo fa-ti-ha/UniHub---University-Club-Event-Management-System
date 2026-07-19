@@ -6,7 +6,6 @@
 .dashboard-body { display: flex; min-height: 100vh; background: var(--color-bg); }
 body { overflow-x: hidden; }
 
-/* ---- Sidebar ---- */
 .sidebar {
     width: var(--sidebar-w);
     flex-shrink: 0;
@@ -91,7 +90,7 @@ body { overflow-x: hidden; }
 .stat-card-value { font-size: 1.75rem; font-weight: 900; line-height: 1; margin-bottom: 0.15rem; }
 .stat-card-label { font-size: 0.75rem; color: var(--color-text-3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
 
-/* ---- Welcome Card ---- */
+/* ---- Welcome Card added done---- */
 .welcome-card {
     background: linear-gradient(135deg, #0f172a, #1a56db);
     border-radius: var(--radius-xl);
@@ -109,10 +108,10 @@ body { overflow-x: hidden; }
 .welcome-text p  { color: rgba(255,255,255,0.75); font-size: 0.875rem; margin-bottom: 0.15rem; display: flex; align-items: center; gap: 0.4rem; }
 .student-id { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); padding: 0.2rem 0.7rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 600; display: inline-block; }
 
-/* ---- Chart Card ---- */
+/* ---- Chart Card added---- */
 .chart-card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.5rem; }
 
-/* ---- Profile Page ---- */
+/* ---- Profile Page added---- */
 .profile-header-card { background: linear-gradient(135deg, #1e3a8a, #1a56db); border-radius: var(--radius-xl); padding: 2rem; display: flex; align-items: center; gap: 1.5rem; }
 .profile-avatar-wrap { }
 .profile-avatar { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(255,255,255,0.3); }
