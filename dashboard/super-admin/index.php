@@ -121,7 +121,7 @@ require_once __DIR__ . '/../../includes/header.php';
     </table>
     </div>
 </div>
-
+<!-- checked everything there was no bug -->
 <?php renderDashboardEnd(); ?>
 </div>
 <?php require_once __DIR__ . '/../../includes/footer.php'; ?>
