@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 function isLoggedIn(): bool {
-    return !empty($_SESSION['user_id']) && !empty($_SESSION['user']) && !empty($_SESSION['role']);
+    return isset($_SESSION['user_id']) && !empty($_SESSION['user_id']);
 }
 
 function currentUser(): ?array {
@@ -57,7 +57,7 @@ function loginUser(array $user): void {
         'phone'           => $user['phone'] ?? null,
     ];
 }
-//fixed roll access issues
+
 function logoutUser(): void {
     $_SESSION = [];
     if (ini_get('session.use_cookies')) {
@@ -77,4 +77,3 @@ function dashboardRedirect(): void {
     header('Location: ' . ($map[$role] ?? BASE_URL . '/index.php'));
     exit;
 }
-// check & fixed bugs

@@ -1,3 +1,7 @@
+/* ============================================================
+   assets/js/main.js — Global JS: theme, nav, dropdowns, toasts,
+   notification polling, scroll animations, counter animation
+   ============================================================ */
 'use strict';
 
 // ============================================================

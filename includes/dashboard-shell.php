@@ -129,4 +129,3 @@ if (t2) {
 }
 </script>';
 }
-//sidebar and theme toggle issue fixed

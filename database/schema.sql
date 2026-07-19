@@ -1,3 +1,7 @@
+-- ============================================================
+-- University Club & Event Management System
+-- Database Schema v1.0
+-- ============================================================
 
 CREATE DATABASE IF NOT EXISTS unihubt CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE unihubt;
